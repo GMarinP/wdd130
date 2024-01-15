@@ -10,8 +10,11 @@ nav a {
 h1 {
     color: #371C77;
 }
+h2 {
+    color: #bcb3e4;
+}
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
     border: 1px solid #371C77;
     padding: 2px;
@@ -28,11 +31,12 @@ aside {
     margin: 1rem;
     border: 1px solid #371C77;
     padding: 1rem;
-    background-color: solid #5E3FB3;
-    color: white;
+    background-color: #5E3FB3;
+    color: whitesmoke;
+    text-align: center;
 }
 aside img{
-    width: 200px;
+    width: 150px;
     height: auto;
     border: 1px solid #371C77;
     padding: 2px;
@@ -40,6 +44,6 @@ aside img{
 }
 footer {
     margin-top: 15px;
-    border-top: 1px solid #371C77;
+    border-top: 1px dotted #371C77;
     text-align: center;
 }
