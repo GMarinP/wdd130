@@ -1,6 +1,6 @@
 nav {
-    background-color: mediumpurple;
-    padding: 10px
+    background-color: #5E3FB3;
+    padding: 10px;
 }
 nav a {
     color: white;
@@ -8,15 +8,38 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color: mediumpurple;
+    color: #371C77;
 }
-img {
-    width: 150px;
+main img {
+    width: 200px;
     height: auto;
-    border: 1px solid mediumpurple;
+    border: 1px solid #371C77;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 10px;
+    padding: 0;
+}
+main {
+    max-width: 840px;
+}
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid #371C77;
+    padding: 1rem;
+    background-color: solid #5E3FB3;
+    color: white;
+}
+aside img{
+    width: 200px;
+    height: auto;
+    border: 1px solid #371C77;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #371C77;
+    text-align: center;
 }
