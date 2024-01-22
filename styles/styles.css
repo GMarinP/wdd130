@@ -1,11 +1,19 @@
 nav {
     background-color: #5E3FB3;
     padding: 10px;
+    display: flex;
 }
 nav a {
     color: white;
     display: block;
     padding: 20px;
+}
+nav a:link, nav a:visited {
+    color: #bcb3e4;
+}
+nav a:hover {
+    color: #371c77;
+    background-color: #bcb3e4;
 }
 h1 {
     color: #371C77;
