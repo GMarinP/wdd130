@@ -1,57 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Subrayada:wght@400;700&display=swap');
+:root {
+    --primary-color: #5E3FB3;
+    --secondary-color: #371C77;
+    --accent1-color: #BCB3E4;
+    --accent2-color: #89C8F5;
+    --heading-font: 'Montserrat Subrayada';
+    --paragraph-font: 'Josefin Sans';
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color:var(--accent1-color);
+}
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    font-weight: 350;
+}
 nav {
-    background-color: #5E3FB3;
+    background-color: var(--nav-background-color);
     padding: 10px;
     display: flex;
 }
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 nav a:link, nav a:visited {
-    color: #bcb3e4;
+    color: var(--nav-link-color);
 }
 nav a:hover {
-    color: #371c77;
-    background-color: #bcb3e4;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
 }
 h1 {
-    color: #371C77;
+    color: var(--secondary-color);
+    margin: 1rem;
 }
 h2 {
-    color: #bcb3e4;
+    color: var(--accent1-color);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #371C77;
+    border: 1px solid var(--secondary-color);
     padding: 2px;
+    margin: 10px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 p {
     padding: 0;
+    margin: 1rem;
 }
 main {
     max-width: 840px;
 }
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid #371C77;
-    padding: 1rem;
-    background-color: #5E3FB3;
-    color: whitesmoke;
     text-align: center;
+    position: relative;
 }
 aside img{
     width: 200px;
     height: auto;
-    border: 1px solid #371C77;
+    border: 1px solid var(--secondary-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 footer {
     margin-top: 15px;
-    border-top: 1px dotted #371C77;
+    border-top: 1px dotted var(--secondary-color);
     text-align: center;
+}
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px var(--secondary-color);
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    max-width: 300px;
+}
+.list {
+    padding: 20px;
+}
+.list a {
+    color: whitesmoke;
+    text-decoration: none;
 }
