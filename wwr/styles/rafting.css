@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+--primary-color: #006DAA;
+--secondary-color: #0353A4;
+--accent1-color: #F6AE2D;
+--accent2-color: #B1D7FC;
+--heading-font: 'Red Hat Display', bold;
+--paragraph-font: 'Red Hat Display';
+--nav-background-color:var(--accent2-color);
+--nav-link-color:var(--secondary-color);
+--nav-hover-link-color: #ffffff;
+--nav-hover-background-color:var(--accent1-color);
+}
+/*universal rules*/
+* {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display";
+}
+h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+p {
+    padding: 1rem;
+}
+/*header*/
+header {
+    padding: 20px;
+    background-color: var(--accent2-color);
+    display: flex;
+}
+header img{
+   width: 5rem; 
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.hero {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(240, 240, 240, 0.7);
+    width: 1000px;
+    display: block;
+    text-align: center;
+}
+article {
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    background-color: rgba(240, 240, 240, 0.7);
+}
+article img {
+    width: 25%;
+    float: right;
+}
+/*body*/
+section img{
+    padding: 5px;
+    max-width: 750px;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px dotted var(--secondary-color);
+    text-align: center;
+}
+/*footer*/
+footer img {
+    width: 2rem;
+    height: auto;
+    display: flex;
+}
