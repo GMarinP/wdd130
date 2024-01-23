@@ -11,6 +11,7 @@
 --nav-hover-link-color: #ffffff;
 --nav-hover-background-color:var(--accent1-color);
 }
+
 /*universal rules*/
 * {
     max-width: 1000px;
@@ -26,6 +27,7 @@ h2, h3, h4, h5, h6 {
 p {
     padding: 1rem;
 }
+
 /*header*/
 header {
     padding: 20px;
@@ -79,6 +81,7 @@ article img {
     width: 25%;
     float: right;
 }
+
 /*body*/
 section img{
     padding: 5px;
@@ -89,6 +92,7 @@ footer {
     border-top: 1px dotted var(--secondary-color);
     text-align: center;
 }
+
 /*footer*/
 footer img {
     width: 2rem;
