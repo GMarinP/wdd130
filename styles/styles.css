@@ -12,6 +12,7 @@
     --nav-hover-link-color: var(--secondary-color);
     --nav-hover-background-color:var(--accent1-color);
 }
+/*universal rules*/
 * {
     margin: 0;
     padding:  0;
@@ -19,10 +20,27 @@
     font-family: var(--paragraph-font);
     font-weight: 350;
 }
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+h1 {
+    margin-top: 1rem;
+    border-bottom: 0.5px dotted var(--secondary-color);
+}
+p {
+    padding: 0;
+    margin: 1rem;
+}
+
+/*header rules*/
 nav {
     background-color: var(--nav-background-color);
-    padding: 10px;
+    padding: 0;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: var(--nav-link-color);
@@ -37,12 +55,10 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-h1, h2, h3, h4, h5, h6 {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
-    font-weight: 600;
-}
-h1 {
+
+/*body rules*/
+main {
+    grid-column: 2/3;
     margin: 1rem;
 }
 main img {
@@ -54,17 +70,12 @@ main img {
     box-shadow: 0 0 30px gray;
     float: right;
 }
-p {
-    padding: 0;
-    margin: 1rem;
-}
-main {
-    max-width: 840px;
-}
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside h2{
     position: absolute;
@@ -97,4 +108,8 @@ footer {
 .list a {
     color: whitesmoke;
     text-decoration: none;
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
