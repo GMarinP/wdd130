@@ -14,7 +14,6 @@
 
 /*universal rules*/
 * {
-    max-width: 1000px;
     margin: 0;
     padding: 0;
     font-family: "Red Hat Display";
@@ -32,7 +31,11 @@ p {
 header {
     padding: 20px;
     background-color: var(--accent2-color);
-    display: flex;
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 2fr 1fr;
+	align-items: center;
+	border-bottom: 1px;
 }
 header img{
    width: 5rem; 
@@ -61,6 +64,12 @@ nav a:hover {
     width: 100%;
     height: auto;
 }
+.heroimage img {
+    width: 100%;
+}
+.heroimage h1 {
+    width: 100%;
+}
 h1 {
     color: var(--primary-color);
     position: absolute;
@@ -85,17 +94,28 @@ article img {
 /*body*/
 section img{
     padding: 5px;
-    max-width: 750px;
+    width: 90%;
+
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+/*footer*/
 footer {
+    background-color: var(--nav-background-color);
     margin-top: 15px;
     border-top: 1px dotted var(--secondary-color);
     text-align: center;
 }
-
-/*footer*/
 footer img {
     width: 2rem;
     height: auto;
+    
+}
+.footergrid {
     display: flex;
+    justify-content: center;
 }
