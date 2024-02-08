@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Subrayada:wght@400;700&display=swap');
+:root {
+    --primary-color: #5E3FB3;
+    --secondary-color: #371C77;
+    --accent1-color: #BCB3E4;
+    --accent2-color: #89C8F5;
+    --heading-font: 'Montserrat Subrayada';
+    --paragraph-font: 'Josefin Sans';
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color:var(--accent1-color);
+}
+/*universal rules*/
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    font-weight: 350;
+}
+
+/*header rules*/
+
+header {
+    margin: 0 auto;
+    display: grid;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+h1 {
+    font-family: var(--heading-font);
+    margin-top: 1rem;
+    border-bottom: 0.5px dotted var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+/*body rules*/
+
+form {
+    display: grid;
+    padding: 1rem;
+    margin: 5px auto;
+    max-width: 700px;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+fieldset {
+    display: grid;
+    grid-gap: 5px;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+}
+button {
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+    border: 1px;
+    border-radius: 0.5rem;
+    color: var(--secondary-color);
+}
+button:hover {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+input [type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px dotted var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+ /* class selectors */
+ 
