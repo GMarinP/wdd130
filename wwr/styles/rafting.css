@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     font-family: "Red Hat Display";
+    text-decoration: none;
 }
 h2, h3, h4, h5, h6 {
     color: var(--primary-color);
@@ -58,18 +59,7 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-.hero {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.heroimage img {
-    width: 100%;
-}
-.heroimage h1 {
-    width: 100%;
-}
+
 h1 {
     color: var(--primary-color);
     position: absolute;
@@ -97,10 +87,57 @@ section img{
     width: 90%;
 
 }
-.grid {
+form {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
+    padding: 1rem;
+    margin: 5px auto;
+    max-width: 700px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+fieldset {
+    display: grid;
+    grid-gap: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+}
+button {
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+    border: 1px;
+    border-radius: 0.5rem;
+    color: var(--secondary-color);
+}
+button:hover {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+input [type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+footer {
+    margin-top: 15px;
+    border-top: 1px dotted var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
 }
 
 /*footer*/
@@ -114,6 +151,37 @@ footer img {
     width: 2rem;
     height: auto;
     
+}
+
+/* class slectors*/
+
+.hero {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.heroimage img {
+    width: 100%;
+}
+.heroimage h1 {
+    width: 100%;
+}
+.info1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.staffgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.staffgrid img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 500px;
+    padding: 1rem;
 }
 .footergrid {
     display: flex;
