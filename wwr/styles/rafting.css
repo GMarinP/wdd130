@@ -30,9 +30,9 @@ p {
 
 /*header*/
 header {
-    padding: 20px;
+    padding: 0;
     background-color: var(--accent2-color);
-    margin: 1rem auto;
+    margin: 0;
 	display: grid;
 	grid-template-columns: 120px 2fr 1fr;
 	align-items: center;
@@ -85,7 +85,6 @@ article img {
 section img{
     padding: 1rem;
     width: 90%;
-
 }
 form {
     display: grid;
@@ -133,19 +132,14 @@ input [type="checkbox"] {
     height: 20px;
     vertical-align: bottom;
 }
-footer {
-    margin-top: 15px;
-    border-top: 1px dotted var(--secondary-color);
-    text-align: center;
-    padding: 1rem;
-}
 
 /*footer*/
 footer {
     background-color: var(--nav-background-color);
-    margin-top: 15px;
+    margin-top: 0;
     border-top: 1px dotted var(--secondary-color);
     text-align: center;
+    padding: 1rem;
 }
 footer img {
     width: 2rem;
@@ -182,6 +176,26 @@ footer img {
     justify-items: center;
     max-width: 500px;
     padding: 1rem;
+}
+.callaction {
+    display: grid;
+    justify-items: center;
+    border: solid var(--secondary-color);
+    border-radius: 1rem;
+    margin: 1rem 5rem;
+    background-color: var(--accent2-color);
+}
+.callaction button  {
+    margin: 0.5rem;
+    font-size: 18px;
+}
+.tripsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.tripsgrid img {
+    max-width: 500px;
 }
 .footergrid {
     display: flex;
